@@ -23,6 +23,13 @@ SECRET_KEY = '&3wu^q@6l!#662r&pn2vr)qbi_jo%+g-n8n1e-ewe^50$kbq)d'
 DEBUG = True
 
 TEMPLATE_DEBUG = True
+TEMPLATE_DIRS = (
+    BASE_DIR+'/templates',
+)
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+)
 
 ALLOWED_HOSTS = []
 
