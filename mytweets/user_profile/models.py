@@ -3,8 +3,9 @@ from django.contrib.auth.models import AbstractBaseUser
 
 # Create your models here.
 class User(AbstractBaseUser):
+    """
     Custom user class.
-
+    """
     username = models.CharField('username', max_length=10, unique=True, db_index=True)
     email = models.EmailField('email address', unique=True)
     joined = models.DateTimeField(auto_now_add=True)
