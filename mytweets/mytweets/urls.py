@@ -1,6 +1,7 @@
+#url(r'^user/(\w+)/$', Profile.as_view()), urls.py
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
-from tweets.views import Index
+from tweets.views import Index, Profile
 admin.autodiscover()
 
 urlpatterns = patterns('',
